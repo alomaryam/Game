@@ -24,11 +24,17 @@ export const Cards = (props) => {
       {flipped === false ? (
         <CardImage
           onClick={flippedCard}
-          alt="cardbackimage"
+          flipped={flipped}
+          alt="backimage"
           src={card.backimage}
         />
       ) : (
-        <CardImage onClick={flippedCard} alt="cardimage" src={card.image} />
+        <CardImage
+          onClick={flippedCard}
+          flipped={flipped}
+          alt="cardimage"
+          src={card.image}
+        />
       )}
     </div>
   );

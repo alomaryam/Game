@@ -29,6 +29,18 @@ const Grid = styled.div`
 `;
 
 const TheBoard = () => {
+  // const pair = prop.pair;
+  // const [firstCard, setFirstCard] = useState(pair.pair);
+  // const [secondCard, setSecondCard] = useState(pair.pair);
+
+  // const Pairing = () => {
+  //   setFirstCard(firstCard === false ? true : false);
+  //   setSecondCard(secondCard === false ? true : false);
+  // };
+
+  // const SetPairs= ()=> {
+  //   {firstCard===secondCard=== false ? :
+
   const CardsonBoard = CardList.sort(
     () => Math.random() - 0.5
   ).map((thecard) => <Cards card={thecard} key={thecard.id} />);
