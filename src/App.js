@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+// import { Card } from "./components/Cards.js";
+import TheBoard from "./components/Board.js";
+// import { useState } from "react";
+// import { ThemeProvider } from "styled-components";
+
+// const card = {
+//   FaceDown: {
+//     borderStyle: "solid",
+//     border: "yellowgreen",
+//     backgroundColor: "yellowgreen",
+//   },
+//   FaceUp: {
+//     borderStyle: "solid",
+//     border: "blue",
+//     backgroundColor: "blue",
+//   },
+// };
 
 function App() {
+  // const [flipped, setFlip] = useState("FaceDown");
+
+  // const flippedCard = () => {
+  //   setFlip(flipped === "FaceDown" ? "FaceUp" : "FaceDown");
+  // };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <TheBoard />
     </div>
   );
 }
