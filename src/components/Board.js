@@ -24,6 +24,8 @@ import styled from "styled-components";
 
 const Grid = styled.div`
   display: grid;
+  justify-content: center;
+  margin-top: 150px;
   grid-template-columns: repeat(4, 270px);
   grid-template-rows: repeat(4, 270px);
 `;
